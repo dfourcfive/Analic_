@@ -1,0 +1,160 @@
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/part_integral_container"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#E0E0E0">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/test1"
+                android:text="Write down the function:"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/calc"
+                android:layout_alignStart="@+id/calc" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/function"
+                android:hint=" x "
+                android:layout_below="@+id/test"
+                android:layout_toLeftOf="@+id/calc"
+                android:layout_toStartOf="@+id/calc"
+                android:imeOptions="actionDone"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Write down the bourne a:"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/calc"
+                android:layout_alignStart="@+id/calc" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="numberSigned|numberDecimal"
+                android:ems="10"
+                android:id="@+id/a"
+                android:hint="a:"
+                android:layout_below="@+id/test"
+                android:layout_toLeftOf="@+id/calc"
+                android:layout_toStartOf="@+id/calc"
+                android:imeOptions="actionDone"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Write down the bourne b:"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/calc"
+                android:layout_alignStart="@+id/calc" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="numberSigned|numberDecimal"
+                android:ems="10"
+                android:id="@+id/b"
+                android:hint="b:"
+                android:layout_below="@+id/test"
+                android:layout_toLeftOf="@+id/calc"
+                android:layout_toStartOf="@+id/calc"
+                android:imeOptions="actionDone"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/calc"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/calc"
+                android:text="Write numbers of intervales:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/n"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/test"
+                android:layout_toLeftOf="@+id/calc"
+                android:layout_toStartOf="@+id/calc"
+                android:ems="10"
+                android:hint="N:"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned|numberDecimal" />
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+        android:id="@+id/functionResultContainer"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/calc"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/calc"
+            android:gravity="center"
+            android:text="The result is :"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/functionResult"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="x"
+                android:imeOptions="actionDone"
+                android:inputType="numberSigned|numberDecimal" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

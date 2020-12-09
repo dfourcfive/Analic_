@@ -1,0 +1,72 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_img"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:layout_scrollFlags="scroll" />
+
+        <a.grp11.nummethv3.Menus.subMenu.SubMenu
+            android:id="@+id/tabLayout_subMenu"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/darkLight"
+            android:minHeight="65dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:tabBackground="@color/darkLight"
+            app:tabMode="scrollable"
+            app:tabTextColor="@color/white">
+
+        </a.grp11.nummethv3.Menus.subMenu.SubMenu>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/part_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <FrameLayout
+                android:id="@+id/fragment_matrix_android_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+
+            </FrameLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+    <android.support.design.widget.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottom_menu_actionButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/bottom_menu_header"
+        app:layout_anchorGravity="top|center" />
+
+        <include layout="@layout/fragment_bottom_menu">
+        </include>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+

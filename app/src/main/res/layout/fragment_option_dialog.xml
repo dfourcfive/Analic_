@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dailog_container"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:minHeight="450dp"
+    android:minWidth="350dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:background="@color/darkLight">
+
+    <LinearLayout
+        android:id="@+id/dailog_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:background="@color/green">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/dailog_operation_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:padding="3dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    <LinearLayout
+            android:id="@+id/dailog_validator"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center">
+            <Button
+                android:id="@+id/dailog_validator_button"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="@string/validate" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

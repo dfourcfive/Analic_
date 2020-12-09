@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d8cfcf"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="a.grp11.nummethv3.curvefitting.MainActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/test"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/submit_x"
+                    android:layout_toStartOf="@+id/submit_x"
+                    android:text="Enter x-values:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/test1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/calc"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/calc"
+                    android:text="Enter y-values:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/x"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/test"
+                    android:layout_toLeftOf="@+id/calc"
+                    android:layout_toStartOf="@+id/calc"
+                    android:ems="10"
+                    android:hint="x-axis values"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberSigned|numberDecimal" />
+
+                <EditText
+                    android:id="@+id/y"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/test"
+                    android:layout_toEndOf="@+id/test"
+                    android:layout_toRightOf="@+id/test"
+                    android:ems="10"
+                    android:hint="y-axis values"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberSigned|numberDecimal" />
+            </TableRow>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/updatex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorAccent"
+                    android:elevation="9dp"
+                    android:text="Update"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/insertx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorAccent"
+                    android:elevation="9dp"
+                    android:text="Insert"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/submit_x"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_below="@+id/x"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@+id/submit_y"
+                    android:background="#005575"
+                    android:elevation="9dp"
+                    android:text="Submit" />
+            </FrameLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="9dp">
+
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/updatey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/colorAccent"
+                        android:elevation="9dp"
+                        android:text="Update"
+                        android:textColor="@color/icons"
+                        android:visibility="invisible"
+                        tools:textColor="@color/icons" />
+
+                    <Button
+                        android:id="@+id/inserty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/colorAccent"
+                        android:elevation="9dp"
+                        android:text="Insert"
+                        android:textColor="@color/icons"
+                        android:visibility="invisible"
+                        tools:textColor="@color/icons" />
+
+
+                </FrameLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/x_axis"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/submit_x"
+                    android:layout_marginRight="0.5dp"
+                    android:layout_weight="0.5"
+                    android:background="#4499b9" />
+
+                <ListView
+                    android:id="@+id/y_axis"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/submit_y"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.5"
+                    android:background="#4499b9" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/y_axis"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="5dp"
+                    android:background="#005575"
+                    android:onClick="clear"
+                    android:text="Clear"
+                    android:textColor="@color/icons" />
+
+                <Button
+                    android:id="@+id/calc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/y_axis"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/clear"
+                    android:background="#005575"
+                    android:onClick="calc_fit"
+                    android:text="Calculate"
+                    android:textColor="@color/icons" />
+            </TableRow>
+        </TableLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

@@ -1,0 +1,283 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="4" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/_7"
+                android:id="@+id/num_7"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/num_selector"
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/_8"
+                android:id="@+id/num_8"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/num_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:layout_marginStart="1dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/_9"
+                android:id="@+id/num_9"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/num_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:layout_marginStart="1dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/_div"
+                android:id="@+id/op_div"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="1dp"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:layout_marginStart="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/_4"
+                android:id="@+id/num_4"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/num_selector"
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/_5"
+                android:id="@+id/num_5"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/num_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:layout_marginStart="1dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/_6"
+                android:id="@+id/num_6"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/num_selector"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:layout_marginStart="1dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/x"
+                android:id="@+id/op_mul"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:layout_marginStart="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/_1"
+                android:id="@+id/num_1"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/num_selector"
+                android:textColor="#ffffff"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/_2"
+                android:id="@+id/num_2"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/num_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:layout_marginStart="1dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/_3"
+                android:id="@+id/num_3"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/num_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:layout_marginStart="1dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/_minus"
+                android:id="@+id/op_minus"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:layout_marginStart="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="4"
+            android:layout_weight="1" >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/dot"
+                android:id="@+id/op_float"
+                android:layout_weight="2"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/num_selector"
+                android:textColor="#ffffff"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/_0"
+                android:id="@+id/num_0"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/num_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:enabled="true"
+                android:layout_marginStart="1dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/_plus"
+                android:id="@+id/op_plus"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30sp"
+                android:background="@drawable/op_selector"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="1dp"
+                android:clickable="true"
+                android:enabled="true"
+                android:focusable="true"
+                android:layout_marginStart="1dp" />
+        </LinearLayout>
+
+</LinearLayout>
+
+

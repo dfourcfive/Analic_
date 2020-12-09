@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Analic</string>
+
+    <string name="part_matrice_title">Matrix</string>
+    <string name="part_integrale_title">Integral</string>
+    <string name="part_adjustment_title">Curve Fitting</string>
+    <string name="part_root_title">Root Finding</string>
+    <string name="action_settings">settings</string>
+    <string name="action_rate">Rate</string>
+    <string name="share_app">Rate</string>
+    <string name="part_option_edit">Editor</string>
+    <string name="part_option_help">Help</string>
+    <string name="part_option_clear">Clear</string>
+
+    <string name="functionHintText">x</string>
+    <string name="functionDescription">Function</string>
+    <string name="functionRestultDes">The result is :</string>
+    <string name="part_matrice_option_sizer">Sizer</string>
+    <string name="part_integrale_option_graph">Graphe</string>
+
+
+    <string name="part_matrice_operation_op">ADD/SUB/MUL</string>
+         <string name="part_matrice_sub_op_add">+</string>
+         <string name="part_matrice_sub_op_sub">-</string>
+         <string name="part_matrice_sub_op_mul">*</string>
+
+    <string name="part_matrice_operation_det">DETERMINANT</string>
+    <string name="part_matrice_operation_rank">RANK</string>
+    <string name="part_matrice_operation_ech">ECHLONING</string>
+        <string name="part_matrice_sub_ech_redEch">Reduced Echloning</string>
+        <string name="part_matrice_sub_ech_lowEch">Lower Echloning</string>
+        <string name="part_matrice_sub_ech_upEch">Upper Echloning</string>
+    <string name="part_matrice_operation_tro">TRANSPOSER</string>
+    <string name="part_matrice_operation_coMat">CO-MATRICE</string>
+    <string name="part_matrice_operation_inv">INVERT</string>
+
+
+
+    <string name="part_integrale_operation_tra">Trapezoidal</string>
+    <string name="part_integrale_operation_sim1">Simpson &#8531;</string>
+    <string name="part_integrale_operation_sim3">Simpson 3/8</string>  
+    
+    <string name="part_adjustment_operation_poly">Polynomial</string>
+    <string name="part_adjustment_operation_lin">Linéaire</string>
+    <string name="part_adjustment_operation_expo">Exponentielle</string>
+    
+    <string name="part_root_operation_bis">Bisection</string>
+    <string name="part_root_operation_new">Newton Raphson</string>
+    <string name="part_root_operation_sec">Secant</string>
+
+    <string name="validate">Validate</string>
+    <string name="option_sizer_title">Matrix size :</string>
+    <string name="testKey">1</string>
+
+    <string name="_0">0</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_div">/</string>
+    <string name="_plus">+</string>
+    <string name="_eq">=</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="x">x</string>
+    <string name="_6">6</string>
+    <string name="_5">5</string>
+    <string name="_4">4</string>
+    <string name="dot">.</string>
+    <string name="_minus">-</string>
+    <string name="sin">sin</string>
+    <string name="pi">π</string>
+    <string name="sroot">√</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="ln">ln</string>
+    <string name="log">log</string>
+    <string name="fact">!</string>
+    <string name="e">e</string>
+    <string name="pow">^</string>
+    <string name="lpar">(</string>
+    <string name="rpar">)</string>
+    <string name="erase">&#9003;</string>
+    <string name="cut">Cut</string>
+    <string name="paste">Paste</string>
+    <string name="copy">Copy</string>
+    <string name="percentage">%</string>
+    <string name="arccos">arccos</string>
+    <string name="arcsin">arcsin</string>
+    <string name="arctan">arctan</string>
+    <string name="rad">RAD</string>
+    <string name="deg">DEG</string>
+
+
+
+
+
+    <string name="title_second">Second Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

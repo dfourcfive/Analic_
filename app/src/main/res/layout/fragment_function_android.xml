@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="5dp">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:contentPadding="10dp"
+            app:cardElevation="3dp"
+            app:cardCornerRadius="5dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/functionDescription"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkLight"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:id="@+id/functionEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:minWidth="300dp"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:hint="@string/functionHintText"
+                        android:imeOptions="actionDone"/>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/functionParamsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:orientation="vertical"
+        android:background="#E0E0E0">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/functionResultContainer"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="#E0E0E0">
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkLight"
+            android:text="@string/functionRestultDes"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/functionResultEdit"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:ems="10"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkLight"
+                android:hint="@string/functionHintText"/>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

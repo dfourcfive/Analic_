@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#FF009688</color>
+    <color name="darkLight">#0e1020</color>
+    <color name="white">#FFF</color>
+    <color name="dark">#131313</color>
+    <color name="background">#ece4e4</color>
+    <color name="success">#303f9f</color>
+    <color name="icons">#ffffff</color>
+
+    <color name="part_matrice_color">#04B291</color>
+    <color name="part_integrale_color">#694845</color>
+    <color name="part_adjustment_color">#005575</color>
+    <color name="part_root_color">#692D5B</color>
+
+    <color name="colorOp">#546e7a</color>
+    <color name="colorOp_pressed">#29434e</color>
+    <color name="colorNum">#819ca9</color>
+    <color name="colorNum_pressed">#cfd8dc</color>
+    <color name="invPressed">#bdbdbd</color>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/functionParamContainer"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/paramDesText"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="@string/functionDescription"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <android.support.v7.widget.GridLayout
+            android:id="@+id/paramsFieldContainer"
+            android:layout_width="wrap_content"
+            android:minWidth="200dp"
+            android:padding="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            app:orientation="horizontal">
+        </android.support.v7.widget.GridLayout>
+
+</LinearLayout>
